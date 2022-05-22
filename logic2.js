@@ -1,4 +1,6 @@
-import { CosmWasmClient } from "cosmwasm";
+// import { CosmWasmClient } from "cosmwasm";
+const { CosmWasmClient } = require("cosmwasm");
+
 
 // This is your rpc endpoint
 const rpcEndpoint = "http://localhost:26657/";
