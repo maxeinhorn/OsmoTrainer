@@ -8,12 +8,14 @@
     "react-dev": "webpack -d --watch",
     "start": "nodemon server/app.js",
     "seed": "mysql -u root -p < database/schema.sql",
-    "client": "live-server"
+    "client": "live-server",
+    "build": "browserify client/dist/logic2.js -o client/dist/bundle.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^17.0.0",
     "compression": "^1.7.4",
     "cosmwasm": "^1.1.1",
     "express": "^4.18.1"
@@ -24,5 +26,3 @@
   },
   "type": "commonjs"
 }
-
-
